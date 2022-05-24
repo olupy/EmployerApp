@@ -5,7 +5,7 @@ class DepartmentSerializers(serializers.ModelSerializer):
     class Meta:
         model = Departments
         fields = ('DepartmentId',
-                  'DepartmentName',
+                  'Department_Name',
         )
 
 class EmployeeSerializers(serializers.ModelSerializer):
@@ -16,6 +16,6 @@ class EmployeeSerializers(serializers.ModelSerializer):
             'EmployeeName',
             'Department',
             'DateofJoining',
-            
+            'PhotoFileName',
         )
 
